@@ -1,0 +1,11 @@
+.photo-grid__item-like {
+	width: 22px;
+	height: 19px;
+	background-image: url(../../../images/like_small.svg);
+	border: none;
+	background-color: transparent;
+	background-position: center;
+	background-size: initial;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}

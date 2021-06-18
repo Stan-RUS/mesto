@@ -1,0 +1,11 @@
+.popup__add {
+	width: 150px;
+	height: 50px;
+	background-image: url(../../../images/plus_big.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	background-size: initial;
+	border: 1px solid #fff;
+	margin-left: auto;
+}

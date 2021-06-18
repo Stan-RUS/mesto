@@ -1,0 +1,15 @@
+.popup__edit {
+	width: 24px;
+	height: 24px;
+	background-image: url(../../../images/pen_big.svg);
+	background-position: center;
+	background-size:initial;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: 1px solid #fff;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	align-self: center;
+}
