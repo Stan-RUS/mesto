@@ -9,3 +9,14 @@
 	background-repeat: no-repeat;
 	box-sizing: border-box;
 }
+
+.photo-grid__item-like:hover {
+	opacity: .5;
+	cursor: pointer;
+	transition: opacity .3s;
+}
+
+.photo-grid__item-like:active {
+	background-image: url(../../../images/like_full.svg);
+	opacity: 1;
+}

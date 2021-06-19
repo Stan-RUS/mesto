@@ -13,3 +13,10 @@
 	grid-row-end: 2;
 	align-self: center;
 }
+
+.popup__edit:hover {
+	cursor: pointer;
+	opacity: .6;
+	transition: opacity .3s;
+
+}
