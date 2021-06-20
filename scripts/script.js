@@ -21,13 +21,6 @@ const closePopup = function() {
 	popupElement.classList.remove('popup_is-opened')
 }
 
-const closePopupByClickOnOverlay = function(event) {
-	if (event.target != event.currentTarget) {
-		return
-	}
-	closePopup() 
-}
-
 function formSubmitHandler (evt) {
 	evt.preventDefault();
 
@@ -48,10 +41,3 @@ popupEditButtonElement.addEventListener('click', openPopup);
 popupCloseButtonElement.addEventListener ('click', closePopup);
 formElement.addEventListener('submit', formSubmitHandler);
 popupEditButtonElement.addEventListener('click', editProfile);
-popupElement.addEventListener('click', closePopupByClickOnOverlay);
-
-
-
-
-
-
