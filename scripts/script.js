@@ -1,9 +1,9 @@
 const popupElement = document.querySelector('.popup')
 const popupCloseButtonElement = popupElement.querySelector('.popup__btn-close');
 
-const popupEditButtonElement = document.querySelector('.popup__btn-edit');
+const popupEditButtonElement = document.querySelector('.profile__btn-edit');
 
-const popupAddButtonElement = document.querySelector('.popup__btn-add');
+const popupAddButtonElement = document.querySelector('.profile__btn-add');
 
 const togglePopupVisibility = function() {
 	popupElement.classList.toggle('popup_is-opened')
