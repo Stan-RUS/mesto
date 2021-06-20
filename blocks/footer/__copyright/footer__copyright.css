@@ -1,6 +1,8 @@
 .footer__copyright {
 	font-family: "Inter", "Arial", sans-serif;
+	font-size: 18px;
 	line-height: 22px;
 	color: #545454;
 	margin-bottom: 60px;
+	padding-left: 5px; /* по PixelPerfect */
 }
