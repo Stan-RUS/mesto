@@ -1,4 +1,5 @@
 .profile__btn-edit {
+	margin-top: 12px; /* по PixelPerfect */
 	width: 24px;
 	height: 24px;
 	background-image: url(../../../images/pen_big.svg);
