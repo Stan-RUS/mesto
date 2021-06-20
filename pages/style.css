@@ -1,25 +1,19 @@
 @import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
-@import url(../blocks/content/content.css);
-
 @import url(../blocks/page/page.css);
-@import url(../blocks/link/link.css);
-@import url(../blocks/list/list.css);
-
+@import url(../blocks/page/_link/page_link.css);
+@import url(../blocks/page/_list/page_list.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__container/header__container.css);
 @import url(../blocks/header/__logo/header__logo.css);
-
 @import url(../blocks/profile/profile.css);
 @import url(../blocks/profile/__container/profile__container.css);
 @import url(../blocks/profile/__avatar/profile__avatar.css);
 @import url(../blocks/profile/__info/profile__info.css);
 @import url(../blocks/profile/__name/profile__name.css);
 @import url(../blocks/profile/__occupation/profile__occupation.css);
-
 @import url(../blocks/popup/__edit/popup__edit.css);
 @import url(../blocks/popup/__add/popup__add.css);
-
 @import url(../blocks/photo-grid/photo-grid.css);
 @import url(../blocks/photo-grid/__item-image/photo-grid__item-image.css);
 @import url(../blocks/photo-grid/__item-info/photo-grid__item-info.css);
@@ -27,12 +21,8 @@
 @import url(../blocks/photo-grid/__item-place/photo-grid__item-place.css);
 @import url(../blocks/photo-grid/__item/photo-grid__item.css);
 @import url(../blocks/photo-grid/__list/photo-grid__list.css);
-
-
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
-
-
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__close/popup__close.css);
@@ -42,9 +32,4 @@
 @import url(../blocks/popup/__input-name/popup__input-name.css);
 @import url(../blocks/popup/__input-occupation/popup__input-occupation.css);
 @import url(../blocks/popup/__save/popup__save.css);
-@import url(../blocks/popup/__input/popup__input.css);
-
-/* * {
-    outline: 1px solid red;
-
-} */
+@import url(../blocks/popup/_input/popup_input.css);

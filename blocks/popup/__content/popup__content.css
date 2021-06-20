@@ -1,4 +1,12 @@
 .popup__content{
 	max-width: 358px;
 	margin: 0 auto;
+	padding: 0 22px;
+}
+
+@media screen and (max-width: 500px) {
+	.popup__content {
+		max-width: 232px;
+	}
+	
 }

@@ -12,6 +12,8 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   width: 100%;
-  max-width: 880px;
+  max-width: 918px;
+  min-width: 282px;
+  padding: 0 19px;
 }
 
