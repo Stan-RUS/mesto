@@ -1,6 +1,6 @@
 .profile__name {
 	margin: 0;
-	padding-top: 0px;
+	padding-top: 8px; /* по PixelPerfect */
 	font-family: "Inter", "Arial", sans-serif;
 	font-weight: 500;
 	font-size: 42px;

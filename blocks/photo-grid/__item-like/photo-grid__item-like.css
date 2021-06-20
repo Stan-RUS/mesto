@@ -8,6 +8,7 @@
 	background-size: initial;
 	background-repeat: no-repeat;
 	box-sizing: border-box;
+	margin: 0;
 }
 
 .photo-grid__item-like:hover {
