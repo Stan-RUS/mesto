@@ -1,4 +1,4 @@
-.popup__add {
+.popup__btn-add {
 	width: 150px;
 	height: 50px;
 	background-image: url(../../../images/plus_big.svg);
@@ -11,14 +11,14 @@
 	margin-left: auto;
 }
 
-.popup__add:hover {
+.popup__btn-add:hover {
 	cursor: pointer;
 	opacity: .6;
 	transition: opacity .3s;
 }
 
 @media screen and (max-width: 880px) {
-	.popup__add {
+	.popup__btn-add {
 		margin: 0;
 		width: 100%;
 	}

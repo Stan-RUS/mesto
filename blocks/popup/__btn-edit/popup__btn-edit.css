@@ -1,4 +1,4 @@
-.popup__edit {
+.popup__btn-edit {
 	width: 24px;
 	height: 24px;
 	background-image: url(../../../images/pen_big.svg);
@@ -14,7 +14,7 @@
 	align-self: center;
 }
 
-.popup__edit:hover {
+.popup__btn-edit:hover {
 	cursor: pointer;
 	opacity: .6;
 	transition: opacity .3s;
@@ -22,7 +22,7 @@
 }
 
 @media screen and (max-width: 380px) {
-	.popup__edit {
+	.popup__btn-edit {
 		width: 18px;
 		height: 18px;
 		background-image: url(../../../images/pen_small.svg);

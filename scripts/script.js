@@ -1,9 +1,9 @@
 const popupElement = document.querySelector('.popup')
-const popupCloseButtonElement = popupElement.querySelector('.popup__close');
+const popupCloseButtonElement = popupElement.querySelector('.popup__btn-close');
 
-const popupEditButtonElement = document.querySelector('.popup__edit');
+const popupEditButtonElement = document.querySelector('.popup__btn-edit');
 
-const popupAddButtonElement = document.querySelector('.popup__add');
+const popupAddButtonElement = document.querySelector('.popup__btn-add');
 
 const togglePopupVisibility = function() {
 	popupElement.classList.toggle('popup_is-opened')
@@ -23,12 +23,12 @@ const closePopupByClickOnOverlay = function(event) {
 	closePopup() 
 }
 
-popupEditButtonElement.addEventListener('click', openPopup)
+popupEditButtonElement.addEventListener('click', openPopup);
 
 
-popupCloseButtonElement.addEventListener ('click', closePopup)
+popupCloseButtonElement.addEventListener ('click', closePopup);
 
-popupElement.addEventListener('click', closePopupByClickOnOverlay)
+popupElement.addEventListener('click', closePopupByClickOnOverlay);
 
 
 

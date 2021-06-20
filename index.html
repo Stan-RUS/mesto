@@ -10,11 +10,11 @@
 <body class="page">
 
 <header class="header">
-	<a class="page_link" href="#" target="_blank">
+	
 		<div class="header__container">
-			<div class="header__logo"></div>
+				<a href="#" class="link" target="_blank"><div class="header__logo"></div></a>
 		</div>
-	</a>
+	
 </header>
 
 <main class="content">
@@ -24,15 +24,15 @@
 			<img src="./images/jikusto.jpg" alt="аватар Ж.И. Кусто" class="profile__avatar">
 			<div class="profile__info">
 				<h1 class="profile__name">Жак-Ив Кусто</h1>
-				<button class="popup__edit"></button>
+				<button class="popup__btn-edit"></button>
 				<p class="profile__occupation">Исследователь океана</p>
 			</div>
-			<button class="popup__add"></button>
+			<button class="popup__btn-add"></button>
 		</div>
 	</section>
 
 	<section class="photo-grid">
-		<ul class="photo-grid__list page_list">
+		<ul class="photo-grid__list list">
 			<li class="photo-grid__item">
 				<img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="" class="photo-grid__item-image">
 				<div class="photo-grid__item-info">
@@ -85,13 +85,13 @@
 
 <section class="popup">
 	<div class="popup__container">
-		<button class="popup__close"></button>
+		<button class="popup__btn-close"></button>
 		<div class="popup__content">
 			<h2 class="popup__title">Редактировать профиль</h2>
 			<form action="#">
-				<input type="text" class="popup__input-name popup_input" value="Жак-Ив Кусто">
-				<input type="text" class="popup__input-occupation popup_input" value="Исследователь океана">
-				<button class="popup__save" type="submit">Сохранить</button>
+				<input type="text" class="popup__input-name popup__input-text" value="Жак-Ив Кусто">
+				<input type="text" class="popup__input-occupation popup__input-text" value="Исследователь океана">
+				<button class="popup__btn-save" type="submit">Сохранить</button>
 			</form>
 		</div>
 	</div>
