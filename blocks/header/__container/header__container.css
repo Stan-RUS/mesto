@@ -4,3 +4,10 @@
 	padding-bottom: 41px;
 	border-bottom: 1px solid #545454;
 }
+
+@media screen and (max-width: 380px) {
+	.header__container {
+		margin-top: 28px;
+		padding-bottom: 31px;
+}	
+}

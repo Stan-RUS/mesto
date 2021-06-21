@@ -15,3 +15,12 @@
 	transition: opacity .3s;
 	cursor: pointer;
 }
+
+@media screen and (max-width: 380px) {
+	.header__logo {
+		width: 104px;
+		height: 24px;
+		background-image: url(../../../images/logo_white_small.svg);
+	}
+	
+}
