@@ -12,8 +12,9 @@
 	box-sizing: border-box;
 }
 
-@media screen (max-width: 380px) {
+@media screen and (max-width: 380px) {
 	.popup__input-text {
 		padding-bottom: 8px;
-	}	
+	}
+	
 }
