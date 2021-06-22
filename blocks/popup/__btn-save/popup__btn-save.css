@@ -17,11 +17,12 @@
 	transition: opacity .3s;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 380px) {
 	.popup__btn-save {
 		font-size: 14px;
 		line-height: 17px;
 		margin-top: 15px;
+		padding: 0;
 	}
 	
 }

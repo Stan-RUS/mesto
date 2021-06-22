@@ -18,14 +18,13 @@
 	transition: .3s;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 380px) {
 	.popup__btn-close {
-		right: 0;
+		top: -45px;
+		right: 5px;
 		width: 26px;
 		height: 26px;
 		background-image: url(../../../images/Close_Icon_small.svg);
-		top: -45px;
-
 	}
 	
 }
