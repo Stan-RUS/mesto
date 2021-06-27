@@ -8,11 +8,6 @@ const formElement = document.querySelector('.popup__form');
 const nameInput = formElement.querySelector('.popup__input-name');
 const occupationInput = formElement.querySelector('.popup__input-occupation');
 
-
-const togglePopupVisibility = function() {
-	popupElement.classList.toggle('popup_is-opened')
-}
-
 const openPopup = function() {
 	popupElement.classList.add('popup_is-opened')
 }
@@ -37,7 +32,6 @@ function editProfile() {
 	openPopup();
 }
 
-popupEditButtonElement.addEventListener('click', openPopup);
 popupCloseButtonElement.addEventListener ('click', closePopup);
 formElement.addEventListener('submit', formSubmitHandler);
 popupEditButtonElement.addEventListener('click', editProfile);

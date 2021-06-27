@@ -8,11 +8,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	transition: opacity .3s;
 } 
 
 .header__logo:hover {
 	opacity: .5;
-	transition: opacity .3s;
+	
 	cursor: pointer;
 }
 

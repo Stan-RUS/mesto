@@ -2,10 +2,10 @@
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
+	transition: opacity .3s;
 }
 
 .link:hover {
 	opacity: .5;
-	transition: opacity .3s;
 	cursor: pointer;
 }

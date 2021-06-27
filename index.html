@@ -9,15 +9,11 @@
 </head>
 <body class="page">
 
-<header class="header">
-	
-		<div class="header__container section section_narrow">
-				<a href="#" class="link" target="_blank"><div class="header__logo"></div></a>
-		</div>
-	
+<header class="header section section_width_narrow">
+	<a href="#" class="link" target="_blank"><div class="header__logo"></div></a>
 </header>
 
-<main class="content section section_narrow">
+<main class="content section section_width_narrow">
 
 	<section class="profile">
 		<div class="profile__container">
@@ -79,7 +75,7 @@
 	</section>
 </main>
 
-<footer class="footer section section_narrow">
+<footer class="footer section section_width_narrow">
 	<p class="footer__copyright">&copy;2020.Mesto Russia</p>
 </footer>
 
@@ -89,8 +85,8 @@
 		<div class="popup__content">
 			<h2 class="popup__title">Редактировать профиль</h2>
 			<form action="#" class="popup__form">
-				<input type="text" class="popup__input-name popup__input-text" value="Жак-Ив Кусто">
-				<input type="text" class="popup__input-occupation popup__input-text" value="Исследователь океана">
+				<input type="text" class="popup__input-name popup__input_text" name="name" value="Жак-Ив Кусто">
+				<input type="text" class="popup__input-occupation popup__input_text" name="occupation" value="Исследователь океана">
 				<button class="popup__btn-save" type="submit">Сохранить</button>
 			</form>
 		</div>
