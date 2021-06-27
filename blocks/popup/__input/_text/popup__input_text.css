@@ -1,4 +1,4 @@
-.popup_input_text {
+.popup__input_text {
 	width: 100%;
 	font-family: "Inter", "Arial", sans-serif;
 	font-weight: 400;
@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 380px) {
-	.popup_input_text {
+	.popup__input_text {
 		padding-bottom: 8px;
 	}
 	
