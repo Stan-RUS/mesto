@@ -1,7 +1,7 @@
-.photo-grid__item-like {
+.photo-grid__item-like_active {
 	width: 22px;
 	height: 19px;
-	background-image: url(../../../images/like_small.svg);
+	background-image: url(../../../../images/like_full.svg);
 	border: none;
 	background-color: transparent;
 	background-position: center;
@@ -9,10 +9,4 @@
 	background-repeat: no-repeat;
 	box-sizing: border-box;
 	margin: 0;
-	transition: opacity .3s;
-}
-
-.photo-grid__item-like:hover {
-	opacity: .5;
-	cursor: pointer;
 }

@@ -38,6 +38,10 @@ const cardTemplate = document.querySelector(".card-template").content;
 const gridElement = document.querySelector(".list");
 
 
+function setEventListeners(cardElement) {
+	cardElement.querySelector(".card__control_type_delete").addEventListener('click', handleDelete);
+}
+
 function renderCard(name, link) {
 	const cardElement = cardTemplate.cloneNode(true);
 	const cardImage = cardElement.querySelector(".photo-grid__item-image");
@@ -51,6 +55,15 @@ function renderCard(name, link) {
 initialCards.forEach(function(initialCards) {
 	renderCard(initialCards.name, initialCards.link);
 });
+
+document.querySelector(".photo-grid__item-like").addEventListener('click', function(event) {
+	event.target.classList.toggle('photo-grid__item-like_active');
+});
+
+
+// function handleDelete(event) {
+// 	event.target.closest()
+// }
 
 
 

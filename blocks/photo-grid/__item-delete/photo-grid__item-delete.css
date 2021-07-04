@@ -1,7 +1,10 @@
-.photo-grid__item-like {
-	width: 22px;
+.photo-grid__item-delete {
+	position: absolute;
+	top: 18px;
+	right: 15px;
+	width: 18px;
 	height: 19px;
-	background-image: url(../../../images/like_small.svg);
+	background-image: url(../../../images/Trash.svg);
 	border: none;
 	background-color: transparent;
 	background-position: center;
@@ -12,7 +15,7 @@
 	transition: opacity .3s;
 }
 
-.photo-grid__item-like:hover {
-	opacity: .5;
+.photo-grid__item-delete:hover {
+	opacity: .6;
 	cursor: pointer;
 }
