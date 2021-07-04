@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +30,7 @@
 
 	<section class="photo-grid">
 		<ul class="photo-grid__list list">
-			<li class="photo-grid__item">
+			<!-- <li class="photo-grid__item">
 				<img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="горное поселение Карачевск" class="photo-grid__item-image">
 				<div class="photo-grid__item-info">
 					<h2 class="photo-grid__item-place">Карачевск</h2>
@@ -70,7 +71,7 @@
 					<h2 class="photo-grid__item-place">Домбай</h2>
 					<button class="photo-grid__item-like" type="button"></button>
 				</div>
-			</li>
+			</li> -->
 		</ul>
 	</section>
 </main>
@@ -84,14 +85,26 @@
 		<button class="popup__btn-close" type="button"></button>
 		<div class="popup__content">
 			<h2 class="popup__title">Редактировать профиль</h2>
-			<form action="#" class="popup__form">
-				<input type="text" class="popup__input-name popup popup_input_text" name="name" value="Жак-Ив Кусто">
-				<input type="text" class="popup__input-occupation popup popup_input_text" name="occupation" value="Исследователь океана">
+			<form action="#" class="popup__form" name="edit-form">
+				<input type="text" class="popup__input_type_name popup__input" name="name" value="Жак-Ив Кусто">
+				<input type="text" class="popup__input_type_occupation popup__input" name="occupation" value="Исследователь океана">
 				<button class="popup__btn-save" type="submit">Сохранить</button>
 			</form>
 		</div>
 	</div>
 </section>
+
+<template class="card-template">
+			<li class="photo-grid__item">
+				<img src="" alt="" class="photo-grid__item-image">
+				<div class="photo-grid__item-info">
+					<h2 class="photo-grid__item-place"></h2>
+					<button class="photo-grid__item-like" type="button"></button>
+				</div>
+			</li>
+</template>
+
+
 <script src="./scripts/script.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@ const popupAddButtonElement = document.querySelector('.profile__btn-add');
 const formElement = document.querySelector('.popup__form');
 const nameInput = formElement.querySelector('.popup__input-name');
 const occupationInput = formElement.querySelector('.popup__input-occupation');
+con
 
 const openPopup = function() {
 	popupElement.classList.add('popup_is-opened')
