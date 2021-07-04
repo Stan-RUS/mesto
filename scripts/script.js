@@ -5,8 +5,8 @@ const profileOccupation = document.querySelector('.profile__occupation');
 const popupEditButtonElement = document.querySelector('.profile__btn-edit');
 const popupAddButtonElement = document.querySelector('.profile__btn-add');
 const formElement = document.querySelector('.popup__form');
-const nameInput = formElement.querySelector('.popup__input-name');
-const occupationInput = formElement.querySelector('.popup__input-occupation');
+const nameInput = formElement.querySelector('.popup__input_type_name');
+const occupationInput = formElement.querySelector('.popup__input_type_occupation');
 
 const openPopup = function() {
 	popupElement.classList.add('popup_is-opened')
