@@ -36,9 +36,23 @@ const nameInput = formElement.querySelector('.popup__input_type_name');
 const occupationInput = formElement.querySelector('.popup__input_type_occupation');
 const cardTemplate = document.querySelector(".card-template").content;
 const gridElement = document.querySelector(".list");
-const cardElement = cardTemplate.cloneNode(true);
-const cardImage = cardElement.querySelector(".photo-grid__item-image");
-const cartTitle = cardElement.querySelector(".photo-grid__item-place");
+
+
+function renderCard(name, link) {
+	const cardElement = cardTemplate.cloneNode(true);
+	const cardImage = cardElement.querySelector(".photo-grid__item-image");
+	cardElement.querySelector(".photo-grid__item-place").textContent = name;
+	cardImage.src = link;
+	cardImage.alt = name;
+
+	gridElement.appendChild(cardElement);
+}
+
+initialCards.forEach(function(initialCards) {
+	renderCard(initialCards.name, initialCards.link);
+});
+
+
 
 const openPopup = function() {
 	popupElement.classList.add('popup_is-opened')
@@ -68,14 +82,3 @@ popupCloseButtonElement.addEventListener ('click', closePopup);
 formElement.addEventListener('submit', formSubmitHandler);
 popupEditButtonElement.addEventListener('click', editProfile);
 
-function renderCard(name, link) {
-	cardImage.src = link;
-	cardTitle.textContent = name;
-	cardImage.alt = name;
-
-	gridElement.appendChild(cardElement);
-}
-
-function renderGrid(initialCards) {
-	initialCards.forEach(renderCard);
-}
