@@ -35,12 +35,12 @@ const formElement = document.querySelector('.popup__form');
 const nameInput = formElement.querySelector('.popup__input_type_name');
 const occupationInput = formElement.querySelector('.popup__input_type_occupation');
 const cardTemplate = document.querySelector(".card-template").content;
-const gridElement = document.querySelector(".list");
+const gridElement = document.querySelector(".photo-grid__list");
 
-
-function setEventListeners(cardElement) {
-	cardElement.querySelector(".card__control_type_delete").addEventListener('click', handleDelete);
+function setEventListeners (cardElement) {
+	cardElement.querySelector(".photo-grid__item-delete").addEventListener('click', handleDelete);
 }
+
 
 function renderCard(name, link) {
 	const cardElement = cardTemplate.cloneNode(true);
@@ -49,6 +49,8 @@ function renderCard(name, link) {
 	cardImage.src = link;
 	cardImage.alt = name;
 
+  setEventListeners(cardElement);
+
 	gridElement.appendChild(cardElement);
 }
 
@@ -56,14 +58,20 @@ initialCards.forEach(function(initialCards) {
 	renderCard(initialCards.name, initialCards.link);
 });
 
-document.querySelector(".photo-grid__item-like").addEventListener('click', function(event) {
+
+const likeButton = gridElement.querySelector(".photo-grid__item-like");
+likeButton.addEventListener('click', function(event) {
 	event.target.classList.toggle('photo-grid__item-like_active');
 });
 
 
-// function handleDelete(event) {
-// 	event.target.closest()
-// }
+// function enlargePhoto(event)
+
+
+function handleDelete(event) {
+	event.target.closest(".photo-grid__item").remove();
+	}
+
 
 
 
