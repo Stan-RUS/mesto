@@ -26,6 +26,11 @@ const initialCards = [
 ];
 
 const popupElement = document.querySelector('.popup')
+const popupAddNewCard = document.querySelector('.popup_add-card');
+const popupAddNewTitle = popupAddNewCard.querySelector('.popup__title');
+const popupAddNewName = popupAddNewCard.querySelector('.popup__input_type_name-new');
+const popuptAddNewLink = popupAddNewCard.querySelector('.popup__input_type_pic-link');
+const pupupCloseNewCard = popupAddNewCard.querySelector('.popup__btn-close-new');
 const popupCloseButtonElement = popupElement.querySelector('.popup__btn-close');
 const profileName = document.querySelector('.profile__name');
 const profileOccupation = document.querySelector('.profile__occupation');
@@ -39,6 +44,7 @@ const gridElement = document.querySelector(".photo-grid__list");
 
 function setEventListeners (cardElement) {
 	cardElement.querySelector(".photo-grid__item-delete").addEventListener('click', handleDelete);
+  // popupAddButtonElement.addEventListener('click', handleAddCard);'
 }
 
 
@@ -58,7 +64,6 @@ initialCards.forEach(function(initialCards) {
 	renderCard(initialCards.name, initialCards.link);
 });
 
-
 const likeButton = gridElement.querySelector(".photo-grid__item-like");
 likeButton.addEventListener('click', function(event) {
 	event.target.classList.toggle('photo-grid__item-like_active');
@@ -74,14 +79,22 @@ function handleDelete(event) {
 
 
 
-
 const openPopup = function() {
-	popupElement.classList.add('popup_is-opened')
+	popupElement.classList.add('popup_is-opened');
+  document.addEventListener('keydown', closeByEscape);
+}
+
+function closeByEscape(evt) {
+  if(evt.key === 'Escape') {
+    const openedPopup = document.querySelector('.popup_is-open');
+    closePopup(openedPopup);
+  }
 }
 
 const closePopup = function() {
-	popupElement.classList.remove('popup_is-opened')
+	popupElement.classList.remove('popup_is-opened');
 }
+
 
 function formSubmitHandler (evt) {
 	evt.preventDefault();
@@ -92,12 +105,16 @@ function formSubmitHandler (evt) {
 	closePopup();
 }
 
+
 function editProfile() {
 	nameInput.value = profileName.textContent;
 	occupationInput.value = profileOccupation.textContent;
 
 	openPopup();
 }
+
+
+
 
 popupCloseButtonElement.addEventListener ('click', closePopup);
 formElement.addEventListener('submit', formSubmitHandler);
