@@ -35,3 +35,4 @@
 @import url(../blocks/photo-grid/__item-delete/photo-grid__item-delete.css);
 @import url(../blocks/popup/__figure/popup__figure.css);
 @import url(../blocks/popup/__image-caption/popup__image-caption.css);
+@import url(../blocks/popup/__save/_inactive-button/popup__save_inactive-button.css);

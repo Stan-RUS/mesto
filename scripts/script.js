@@ -44,7 +44,7 @@ const gridElement = document.querySelector(".photo-grid__list");
 
 function setEventListeners (cardElement) {
 	cardElement.querySelector(".photo-grid__item-delete").addEventListener('click', handleDelete);
-  // popupAddButtonElement.addEventListener('click', handleAddCard);'
+  cardElement.querySelector(".photo-grid__item-like").addEventListener('click', handleLike);
 }
 
 
@@ -54,7 +54,7 @@ function renderCard(name, link) {
 	cardElement.querySelector(".photo-grid__item-place").textContent = name;
 	cardImage.src = link;
 	cardImage.alt = name;
-
+  
   setEventListeners(cardElement);
 
 	gridElement.appendChild(cardElement);
@@ -64,12 +64,10 @@ initialCards.forEach(function(initialCards) {
 	renderCard(initialCards.name, initialCards.link);
 });
 
-const likeButton = gridElement.querySelector(".photo-grid__item-like");
-likeButton.addEventListener('click', function(event) {
-	event.target.classList.toggle('photo-grid__item-like_active');
-});
 
-
+function handleLike(event) {
+  event.target.classList.toggle('photo-grid__item-like_active');
+}
 // function enlargePhoto(event)
 
 
@@ -119,4 +117,3 @@ function editProfile() {
 popupCloseButtonElement.addEventListener ('click', closePopup);
 formElement.addEventListener('submit', formSubmitHandler);
 popupEditButtonElement.addEventListener('click', editProfile);
-
