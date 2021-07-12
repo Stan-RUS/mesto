@@ -6,5 +6,10 @@
 	height: 282px;
 	object-fit: cover;
 	border: none;
-	
+	cursor: pointer;
+}
+
+.photo-grid__item-image:hover {
+	opacity: .8;
+	transition: .3s;
 }

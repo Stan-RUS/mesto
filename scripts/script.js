@@ -26,21 +26,31 @@ const initialCards = [
 ];
 
 const popupElement = document.querySelector('.popup')
-const popupAddNewCard = document.querySelector('.popup_add-card');
+const popupAddNewCard = document.querySelector('.popup_add-card'); //попап заполнения новой карточки места (4)
 const popupAddNewTitle = popupAddNewCard.querySelector('.popup__title');
-const popupAddNewName = popupAddNewCard.querySelector('.popup__input_type_name-new');
-const popuptAddNewLink = popupAddNewCard.querySelector('.popup__input_type_pic-link');
-const pupupCloseNewCard = popupAddNewCard.querySelector('.popup__btn-close-new');
+const linkInput = popupAddNewCard.querySelector('.popup__input_type_pic-link'); //поле для ссылки на картинку в попапе карточки нового места (11)
+const pupupCloseNewCard = popupAddNewCard.querySelector('.popup__btn-close-new'); //Кнопка Х закрытия попапа новой карточки (6)
 const popupCloseButtonElement = popupElement.querySelector('.popup__btn-close');
-const profileName = document.querySelector('.profile__name');
-const profileOccupation = document.querySelector('.profile__occupation');
-const popupEditButtonElement = document.querySelector('.profile__btn-edit');
-const popupAddButtonElement = document.querySelector('.profile__btn-add');
+const profileName = document.querySelector('.profile__name'); //имя, отображаемое на странице в профиле (8)
+const profileOccupation = document.querySelector('.profile__occupation'); //профессия, отображаемая на странице в профиле (9)
+
+const popupEdit = document.querySelector('.popup__profile-edit'); //попап редактирования профиля (3)
+
+const popupEditButtonElement = document.querySelector('.profile__btn-edit'); //кнопка карандаш редактирования профиля (1)
+const popupButtonSave = document.querySelector('.popup__btn-save'); //кнопка Сохранить в разных попапах (14)
+const popupAddButtonElement = document.querySelector('.profile__btn-add'); //кнопка + добаления новой карточки (2)
+const popupCloseProfile = document.querySelector('.popup__btn-close-profile'); //кнопка Х закрытия попапа редактирования профиля (5)
+const popupCardPlace = document.querySelector('.popup__input_type_place'); //поле для места в попапе новой карточки (10)
 const formElement = document.querySelector('.popup__form');
-const nameInput = formElement.querySelector('.popup__input_type_name');
-const occupationInput = formElement.querySelector('.popup__input_type_occupation');
-const cardTemplate = document.querySelector(".card-template").content;
-const gridElement = document.querySelector(".photo-grid__list");
+const nameInput = formElement.querySelector('.popup__input_type_name'); //поле для имени в попапе редактирования профиля (12)
+const occupationInput = formElement.querySelector('.popup__input_type_occupation'); //поле для профессии в попапе редактирования профиля (13)
+const cardTemplate = document.querySelector(".card-template").content; //содержание шаблона (19)
+const gridElement = document.querySelector(".photo-grid__list"); //галлерия фотографий (18)
+const popupImageBig = document.querySelector('.popup__image'); //клик по картинке для раскрытия (15)
+const popupImageCaption = document.querySelector('.popup__image-caption'); //подпись под картинкой (16)
+const popupImage = document.querySelector('.popup_view-image'); //попап с всплывающей картинкой (17)
+const popupCloseImage = document.querySelector('.popup__close_view-image'); //кнопка X закрытия увеличенной картинки (7)
+const editForm = document.querySelector('.popup__form_type_add-card'); //форма добавления нового места с полями (20)
 
 function setEventListeners (cardElement) {
 	cardElement.querySelector(".photo-grid__item-delete").addEventListener('click', handleDelete);
