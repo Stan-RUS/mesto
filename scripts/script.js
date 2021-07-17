@@ -35,7 +35,7 @@ const popupElement = document.querySelector('.popup');
 const popupEditProfileElement = document.querySelector('.popup__profile-edit');
 const popupAddCardElement = document.querySelector('.popup__add-card');
 const popupImage = document.querySelector('.popup_view-image');
-const imagePopup = document.querySelector('.popup__image');
+
 const captionPopup = document.querySelector('.popup__image-caption');
 
 
@@ -102,7 +102,9 @@ const resetForm = (editForm) => {
 function setEventListeners (cardElement) {
   cardElement.querySelector(".photo-grid__item-delete").addEventListener('click', handleDelete);
   cardElement.querySelector(".photo-grid__item-like").addEventListener('click', handleLike);
+ 
 }
+
 function setEventListeners (newCard) {
   newCard.querySelector(".photo-grid__item-delete").addEventListener('click', handleDelete);
   newCard.querySelector(".photo-grid__item-like").addEventListener('click', handleLike);
@@ -116,6 +118,15 @@ function renderCard(name, link) {
   cardImage.alt = name;
   
   setEventListeners(cardElement);
+
+  cardImage.addEventListener('click', function(evt) {
+    openPopup(popupImage);
+    const imagePopup = document.querySelector('.popup__image');
+    imagePopup.src = evt.target.src;
+    imagePopup.alt = name;
+    captionPopup.textContent = name;
+    
+  })
 
   gridElement.appendChild(cardElement);
 }
@@ -142,6 +153,14 @@ const createCard = (name, link) => {
  cardImage.alt = name;
 
  setEventListeners(newCard);
+
+  cardImage.addEventListener('click', function(event) {
+    openPopup(popupImage);
+    const imagePopup = document.querySelector('.popup__image');
+    imagePopup.src = cardImage.src;
+    imagePopup.alt = name;
+    captionPopup.textContent = name;
+  })
 
  gridElement.prepend(newCard);
 }
