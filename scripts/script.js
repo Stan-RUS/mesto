@@ -29,7 +29,7 @@ const addCardButton = document.querySelector('.profile__btn-add');
 const editProfileButton = document.querySelector('.profile__btn-edit');
 const closeAddCardButton = document.querySelector('.popup__btn-close-new');
 const closeEditProfileButton = document.querySelector('.popup__btn-close-profile');
-const closePreviewImageButton = document.querySelector('.popup_close_btn-image');
+const closePreviewImageButton = document.querySelector('.popup_close-btn-image');
 
 const popupElement = document.querySelector('.popup');
 const popupEditProfileElement = document.querySelector('.popup_type_profile-edit');
