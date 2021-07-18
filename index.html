@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +30,7 @@
 
 	<section class="photo-grid">
 		<ul class="photo-grid__list list">
-			<li class="photo-grid__item">
+			<!-- <li class="photo-grid__item">
 				<img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="горное поселение Карачевск" class="photo-grid__item-image">
 				<div class="photo-grid__item-info">
 					<h2 class="photo-grid__item-place">Карачевск</h2>
@@ -70,7 +71,7 @@
 					<h2 class="photo-grid__item-place">Домбай</h2>
 					<button class="photo-grid__item-like" type="button"></button>
 				</div>
-			</li>
+			</li> -->
 		</ul>
 	</section>
 </main>
@@ -79,6 +80,7 @@
 	<p class="footer__copyright">&copy;2020.Mesto Russia</p>
 </footer>
 
+<<<<<<< HEAD
 <section class="popup">
 	<div class="popup__container">
 		<button class="popup__btn-close" type="button"></button>
@@ -89,9 +91,61 @@
 				<input type="text" class="popup__input_type_occupation popup__input" name="occupation" value="Исследователь океана">
 				<button class="popup__btn-save" type="submit">Сохранить</button>
 			</form>
+=======
+<section>
+	<div class="popup popup__profile-edit">
+		<div class="popup__container">
+			<button class="popup__btn-close popup__btn-close-profile" type="button"></button>
+			<div class="popup__content">
+				<h2 class="popup__title">Редактировать профиль</h2>
+				<form action="#" class="popup__form" name="edit-form">
+					<input type="text" class="popup__input_type_name popup__input" name="name" value="Жак-Ив Кусто">
+					<input type="text" class="popup__input_type_occupation popup__input" name="occupation" value="Исследователь океана">
+					<button class="popup__btn-save" type="submit">Сохранить</button>
+				</form>
+			</div>
+>>>>>>> develop
 		</div>
 	</div>
+	
+	
+	<div class="popup popup__add-card">
+		<div class="popup__container">
+			<button class="popup__btn-close popup__btn-close-new" type="button"></button>
+			<div class="popup__content">
+				<form action="#" class="popup__form popup__form_type_add-card">
+					<h2 class="popup__title">Новое место</h2>
+					<input type="text" class="popup__input popup__input_type_name popup__input_type_place" placeholder="Название" required>
+					<input type="url" class="popup__input popup__input_type_pic-link" name="link" placeholder="Ссылка на картинку" required>
+					<button class="popup__btn-save popup__btn-save-card" type="submit">Создать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup_view-image">
+		<figure class="popup__figure">
+			<button class="popup__btn-close popup__close_view-image" type="button"></button>
+			<img src="#" alt="#" class="popup__image">
+			<figcaption class="popup__image-caption"></figcaption>
+		</figure>
+	</div>
+
+
 </section>
+
+<template class="card-template">
+	<li class="photo-grid__item">
+		<img src="#" alt="#" class="photo-grid__item-image">
+		<button type="button" class="photo-grid__item-delete"></button>
+		<div class="photo-grid__item-info">
+			<h2 class="photo-grid__item-place"></h2>
+			<button class="photo-grid__item-like" type="button"></button>
+		</div>
+	</li>
+</template>
+
+
 <script src="./scripts/script.js"></script>
 </body>
 </html>
