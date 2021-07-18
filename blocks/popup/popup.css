@@ -11,7 +11,7 @@
 	background-color: rgba(0, 0, 0, .5);
 	padding-top: 185px;
 	align-items: center;
-	transition: opacity 1s ease-out;
+	transition: opacity .5s ease-out;
 }
 
 @media screen and (max-width: 380px) {

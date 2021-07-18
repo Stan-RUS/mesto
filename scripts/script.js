@@ -40,16 +40,6 @@ const captionPopup = document.querySelector('.popup__image-caption');
 
 const profileName = document.querySelector('.profile__name');
 const profileOccupation = document.querySelector('.profile__occupation');
-<<<<<<< HEAD
-const popupEditButtonElement = document.querySelector('.profile__btn-edit');
-const popupAddButtonElement = document.querySelector('.profile__btn-add');
-const formElement = document.querySelector('.popup__form');
-const nameInput = formElement.querySelector('.popup__input_type_name');
-const occupationInput = formElement.querySelector('.popup__input_type_occupation');
-
-const openPopup = function() {
-	popupElement.classList.add('popup_is-opened')
-=======
 const editForm = document.querySelector('.popup__form_type_add-card');
 
 const inputProfileNameValue = document.querySelector('.popup__input_type_name');
@@ -71,7 +61,6 @@ function closeByEscape(evt) {
     const openedPopup = document.querySelector('.popup_is-opened');
     closePopup(openedPopup);
   }
->>>>>>> develop
 }
 
 const closePopup = (popupElement) => {
