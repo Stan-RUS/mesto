@@ -29,11 +29,11 @@ const addCardButton = document.querySelector('.profile__btn-add');
 const editProfileButton = document.querySelector('.profile__btn-edit');
 const closeAddCardButton = document.querySelector('.popup__btn-close-new');
 const closeEditProfileButton = document.querySelector('.popup__btn-close-profile');
-const closePreviewImageButton = document.querySelector('.popup__close_view-image');
+const closePreviewImageButton = document.querySelector('.popup_close_view-image');
 
 const popupElement = document.querySelector('.popup');
-const popupEditProfileElement = document.querySelector('.popup__profile-edit');
-const popupAddCardElement = document.querySelector('.popup__add-card');
+const popupEditProfileElement = document.querySelector('.popup_type_profile-edit');
+const popupAddCardElement = document.querySelector('.popup_type_add-card');
 const popupImage = document.querySelector('.popup_view-image');
 
 const captionPopup = document.querySelector('.popup__image-caption');
@@ -167,8 +167,6 @@ const createCard = (name, link) => {
 
  gridElement.prepend(newCard);
 };
-
-
 
 const handleCardSave = (evt) => {
   evt.preventDefault();
