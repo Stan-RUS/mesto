@@ -2,7 +2,6 @@
 	margin: auto;
 	max-width: 75vw;
 	max-height: 75vh;
-	height: 100%;
 	position: relative;
 	align-items: center;
 }
@@ -12,3 +11,4 @@
 		width: calc(100% - 2 * 40px);
 	}
 }
+
