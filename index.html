@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,48 +30,6 @@
 
 	<section class="photo-grid">
 		<ul class="photo-grid__list list">
-			<!-- <li class="photo-grid__item">
-				<img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="горное поселение Карачевск" class="photo-grid__item-image">
-				<div class="photo-grid__item-info">
-					<h2 class="photo-grid__item-place">Карачевск</h2>
-					<button class="photo-grid__item-like" type="button"></button>
-				</div>
-			</li>
-			<li class="photo-grid__item">
-				<img src="./images/kirill-pershin-1404681-unsplash.jpg" alt="пик горы Эльбрус" class="photo-grid__item-image">
-				<div class="photo-grid__item-info">
-					<h2 class="photo-grid__item-place">Гора Эльбрус</h2>
-					<button class="photo-grid__item-like" type="button"></button>
-				</div>
-			</li>
-			<li class="photo-grid__item">
-				<img src="./images/kirill-pershin-1556355-unsplash.jpg" alt="горный заповедник Домбай" class="photo-grid__item-image">
-				<div class="photo-grid__item-info">
-					<h2 class="photo-grid__item-place">Домбай</h2>
-					<button class="photo-grid__item-like" type="button"></button>
-				</div>
-			</li>
-			<li class="photo-grid__item">
-				<img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="горное поселение Карачевск" class="photo-grid__item-image">
-				<div class="photo-grid__item-info">
-					<h2 class="photo-grid__item-place">Карачаевск</h2>
-					<button class="photo-grid__item-like" type="button"></button>
-				</div>
-			</li>
-			<li class="photo-grid__item">
-				<img src="./images/kirill-pershin-1404681-unsplash.jpg" alt="пик горы Эльбрус" class="photo-grid__item-image">
-				<div class="photo-grid__item-info">
-					<h2 class="photo-grid__item-place">Гора Эльбрус</h2>
-					<button class="photo-grid__item-like" type="button"></button>
-				</div>
-			</li>
-			<li class="photo-grid__item">
-				<img src="./images/kirill-pershin-1556355-unsplash.jpg" alt="горный заповедник Домбай" class="photo-grid__item-image">
-				<div class="photo-grid__item-info">
-					<h2 class="photo-grid__item-place">Домбай</h2>
-					<button class="photo-grid__item-like" type="button"></button>
-				</div>
-			</li> -->
 		</ul>
 	</section>
 </main>
@@ -100,9 +58,9 @@
 		<div class="popup__container">
 			<button class="popup__btn-close popup__btn-close-new" type="button"></button>
 			<div class="popup__content">
-				<form action="#" class="popup__form popup__form_type_add-card">
+				<form action="#" class="popup__form popup__form_type_add-card" name="add-card">
 					<h2 class="popup__title">Новое место</h2>
-					<input type="text" class="popup__input popup__input_type_name popup__input_type_place" placeholder="Название" required>
+					<input name="input-place" type="text" class="popup__input popup__input_type_name popup__input_type_place" placeholder="Название" required>
 					<input type="url" class="popup__input popup__input_type_pic-link" name="link" placeholder="Ссылка на картинку" required>
 					<button class="popup__btn-save popup__btn-save-card" type="submit">Создать</button>
 				</form>
@@ -110,7 +68,7 @@
 		</div>
 	</div>
 
-	<div class="popup popup_view-image">
+	<div class="popup popup_type_view-image">
 		<figure class="popup__figure">
 			<button class="popup__btn-close popup__btn-close-image" type="button"></button>
 			<img src="#" alt="#" class="popup__image">

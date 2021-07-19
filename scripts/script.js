@@ -31,10 +31,9 @@ const closeAddCardButton = document.querySelector('.popup__btn-close-new');
 const closeEditProfileButton = document.querySelector('.popup__btn-close-profile');
 const closePreviewImageButton = document.querySelector('.popup__btn-close-image');
 
-const popupElement = document.querySelector('.popup');
 const popupEditProfileElement = document.querySelector('.popup_type_profile-edit');
 const popupAddCardElement = document.querySelector('.popup_type_add-card');
-const popupImage = document.querySelector('.popup_view-image');
+const popupImage = document.querySelector('.popup_type_view-image');
 
 const captionPopup = document.querySelector('.popup__image-caption');
 
@@ -65,6 +64,7 @@ function closeByEscape(evt) {
 
 const closePopup = (popupElement) => {
   popupElement.classList.remove('popup_is-opened');
+  document.removeEventListener('keydown', closeByEscape); 
 };
 
 addCardButton.addEventListener('click', function() {
