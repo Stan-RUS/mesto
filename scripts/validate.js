@@ -45,37 +45,49 @@ const setEventListeners = (formElement) => {
 setEventListeners(form);
 
 const enableValidation = () => {
-	const formList = Array.from(document.querySelectorAll('.form'));
-	formList.forEach((formElement) => {
-		formElement.addEventListener('submit', (evt) => {
-			evt.preventDefault();
-		});
-		const fieldsetList = Array.from(formElement.querySelectorAll('.form_set'));
-
-  	fieldsetList.forEach((fieldSet) => {
-    setEventListeners(fieldSet);
+  const formList = Array.from(document.querySelectorAll('.form'));
+  formList.forEach((formElement) => {
+     formElement.addEventListener('submit', function (evt) {
+      evt.preventDefault();
+    });
+    
+  const fieldsetList = Array.from(formElement.querySelectorAll('.form__set'));
+  fieldsetList.forEach((fieldSet) => {
+  setEventListeners(fieldSet);
+    }); 
   });
+};
+
  
-		setEventListeners(formElement);
-	});
-};
+	const setEventListeners = (formElement) => {
+		const inputList = Array.from(formElement.querySelectorAll('.form__input'));
+		const buttonElement = formElement.querySelector('.form__submit');
+		toggleButtonState(inputList, buttonElement);
+		
+		inputList.forEach((inputElement) => {
+			inputElement.addEventListener('input', function () {
+				checkInputValidity(formElement, inputElement);
+				toggleButtonState(inputList, buttonElement);
+			});
+		});
+	};
+	
 
-const hasInvalidInput = (inputList) => {
-  return inputList.some((inputElement) => {
-  return !inputElement.validity.valid;
-}); 
-
-const toggleButtonState = (inputList, buttonElement) => {
-  if (hasInvalidInput(inputList)) {
-  buttonElement.classList.add('button_inactive');
-	} else {
-		buttonElement.classList.remove('button_inactive');
-	} 
-};
+	const hasInvalidInput = (inputList) => {
+		return inputList.some((inputElement) => {
+			return !inputElement.validity.valid;
+		})
+	}; 
+	
+	const toggleButtonState = (inputList, buttonElement) => {
+		if (hasInvalidInput(inputList)) {
+			buttonElement.classList.add('button_inactive');
+		} else {
+			buttonElement.classList.remove('button_inactive');
+		}
+	}; 
 
 enableValidation();
-
-};
 
 
 
