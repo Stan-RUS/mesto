@@ -83,11 +83,13 @@ initialCards.forEach(function (element) {
 const openPopup = (popupElement) => {
     popupElement.classList.add('popup_is-opened');
     document.addEventListener('keydown', closeByEscape);
+    document.addEventListener('mousedown', closePopupByClickOnOverlay);
 };
 
 const closePopup = (popupElement) => {
     popupElement.classList.remove('popup_is-opened');
     document.removeEventListener('keydown', closeByEscape);
+    document.removeEventListener('mousedown', closePopupByClickOnOverlay);
 };
 
 function closeByEscape(evt) {
@@ -98,10 +100,10 @@ function closeByEscape(evt) {
 }
 
 const closePopupByClickOnOverlay = function (event) {
-    if (event.target !== event.currentTarget) {
-        return;
+    const openedPopup = document.querySelector('.popup_is-opened');
+    if (event.target === openedPopup) {
+        closePopup(openedPopup);
     }
-    closePopup(event.currentTarget);
 };
 
 const fillEditProfile = () => {
